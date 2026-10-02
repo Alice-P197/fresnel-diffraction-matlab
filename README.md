@@ -35,6 +35,8 @@ A compact MATLAB toolkit that numerically propagates a **Laguerre–Gaussian (LG
 | `main.m` | Main script: sets parameters, builds aperture + beam, loops over propagation distances and methods, renders figure and writes GIF. | 主脚本：设置参数、构造孔径与入射光、循环传播距离与三种方法、出图并写 GIF。 |
 | `LG_beam.m` | Analytic Laguerre–Gaussian complex field `E(r, θ, z; p, l)`. | 解析形式的拉盖尔-高斯复振幅 `E(r, θ, z; p, l)`。 |
 | `annular_hole.m` | Binary annular / circular aperture mask on an `N × N` grid. | 在 `N × N` 网格上生成环形 / 二元圆孔掩膜。 |
+| `makegrid.m` | Utility: build `x` / `y` coordinate vectors from resolution and pixel pitch. | 工具函数：根据分辨率和像素间距生成 `x` / `y` 坐标向量。 |
+| `show_LG_beam.m` | Standalone demo script: renders a higher-order LG beam (`p = 2, l = 3`) with the `lambda2rgb` colormap and overlaid 1-D profiles. | 独立演示脚本：用 `lambda2rgb` 色图绘制高阶 LG 光束（`p = 2, l = 3`）并叠加一维剖面。 |
 | `propagate.m` | Unified propagation routine. Method selected via `'Method','S-FFT' / 'T-FFT' / 'D-FFT'`. | 统一传播函数，通过 `'Method','S-FFT' / 'T-FFT' / 'D-FFT'` 选择算法。 |
 | `show_results.m` | Three-panel side-by-side rendering with shared colorbar. | 三联并排渲染，共享 colorbar。 |
 | `intensity_1D_profile.m` | Overlays normalized 1-D intensity cross-sections (`x`, `y`, or `xy`) on a 2-D intensity plot. | 在二维强度图上叠加归一化一维强度剖面（`x` / `y` / `xy`）。 |

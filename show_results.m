@@ -8,7 +8,7 @@ function show_results(data,d,L0)
     for k = 1:3
         pos1 =[left + (k-1)*(width+gap), bottom, width, height];
         ax(k) = subplot(1,3,k);
-         set(ax(k), 'Position',pos1);
+        set(ax(k), 'Position',pos1);
         imagesc(data{k,2}, data{k,3}, data{k,1});
         axis equal; axis xy; axis manual;
         hold on;
